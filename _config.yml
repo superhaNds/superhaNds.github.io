@@ -1,10 +1,10 @@
 # basic options
-title: Title
+title: Impredicative Fibrations
 author: Konstantinos Brilakis
 email: kon.bril@gmail.com
-description: Personal website
+description: Personal blog
 twitter_username: jekyllrb
-github_username:  superhaNds
+github_username: superhaNds
 
 # Build settings
 markdown: kramdown
