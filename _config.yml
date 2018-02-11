@@ -1,0 +1,11 @@
+# basic options
+title: Title
+author: Konstantinos Brilakis
+email: kon.bril@gmail.com
+description: Personal website
+twitter_username: jekyllrb
+github_username:  superhaNds
+
+# Build settings
+markdown: kramdown
+theme: minima
