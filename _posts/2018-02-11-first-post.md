@@ -8,7 +8,8 @@ What a wonderful post!
 
 ### example
 
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
+```agda
+data ℕ⁺ : Set where
+  one : ℕ⁺
+  suc : ℕ⁺ → ℕ⁺
 ```
