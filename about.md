@@ -11,11 +11,13 @@ The master programme focused on theory and in particular, logic in various topic
 such as formal methods, programming language theory, and proof assistants based
 on type theory.
 
-My go-to general purpose languages are Java and Haskell.
+My go-to general purpose languages are Java and Haskell and I'm very interested
+in Agda, a dependently typed functional language used as a theorem prover.
 
 Main interests:
 - Programming languages.
 - Functional and OO programming.
+- Automated testing
 - Software development methodologies.
 - Proof assistants based in type theory.
 - Lambda calculus and category theory.

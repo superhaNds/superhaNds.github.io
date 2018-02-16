@@ -4,11 +4,11 @@ title: Algebraic Structures in Programming
 ---
 
 Algebraic structures such as groups and monoids are quite often constructed
-in programming with various language. Programmers have been constructing
+in programming with various language. Programmers have been implementing
 such structures even though they did not know their formal definition
 and they didn't need to since the patterns that arise are quite natural.
 
-Some languages make the use of such a concept explicit and perhaps even have 
+Some languages make use of such concepts explicitly and perhaps even have 
 libraries named after their algebraic equivalent. Moreover, it is easier 
 and more useful to define them in certain programming languages. Haskell 
 is known for using extensive mathematical terminology, usually by referencing 
@@ -16,9 +16,9 @@ concepts from category theory present in the theoretical background of the
 language.
 
 Let us examine some basic algebraic structures from the point of view of
-Java, a language which is rare to see such concepts implemented or used.
+Java, a language in which it is rare to see such concepts implemented or used.
 It is also worth noting that since Java 8, it is easier to define them
-since we can now define functions as data through functional interfaces.
+since we can now use functions as data through functional interfaces.
 
 ## Semigroups ##
 
