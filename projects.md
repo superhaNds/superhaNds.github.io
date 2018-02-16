@@ -14,7 +14,7 @@ consisted of constructing initial objects in the category of CwFs and
 a proof of isomorphism between them.
 
 The formalization is public [here](https://github.com/superhaNds/cwfs);
-and the latest draft of the thesis [here]({{/assets/docs/msc_th.pdf}}).
+and the latest draft of the thesis [here]({{https://superhands.github.io/}}/assets/docs/msc_th.pdf).
 
 ## Bachelor Thesis ##
 
@@ -26,4 +26,4 @@ machine learning to tackle this problem by creating models for film reviews
 and general social network short posts. We used GATE, a text engineering tool
 to train and test models and compare different approaching.
 
-The thesis can be found [here]({{/assets/docs/bsc_th.pdf}}).
+The thesis can be found [here]({{https://superhands.github.io/}}/assets/docs/bsc_th.pdf).
