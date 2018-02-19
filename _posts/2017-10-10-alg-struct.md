@@ -1,6 +1,10 @@
 ---
 layout: post
-title: Algebraic Structures in Programming
+title: "Algebraic Structures in Programming"
+date: 2017-10-10
+author: KMB
+categories: General
+tags: algebraic structures in java, monoids programming, groups
 ---
 
 Algebraic structures such as groups and monoids are quite often constructed
