@@ -4,7 +4,7 @@ title: "Algebraic Structures in Programming"
 date: 2017-10-10
 author: KMB
 categories: General
-tags: algebraic structures in java, monoids programming, groups
+tags: algebraic-structures java monoids groups reduce
 ---
 
 Algebraic structures such as groups and monoids are quite often constructed
@@ -27,10 +27,10 @@ since we can now use functions as data through functional interfaces.
 ## Semigroups ##
 
 One of the simplest structures is a [semigroup](https://en.wikipedia.org/wiki/Semigroup).
-It a set `S` equipped with a binary operation closed under `S`. This operation has
+It a set \\(S\\) equipped with a binary operation closed under \\(S\\) . This operation has
 one rule, namely it must be associative. Associativity says that the order in which
-we perform the operation does not affect the result. Symbolically, if `*` is the name
-of the operation and `x, y, z` are in our set, then `x * (y  * z) = (x * y) * z`.
+we perform the operation does not affect the result. Symbolically, if \\(\cdot\\) is the name
+of the operation and \\(x, y, z \in S\\), then \\(x \cdot (y \cdot z) = (x \cdot y) \cdot z\\).
 
 In Java, we can define a semigroup as a class parameterized by a type with one attribute,
 the operation. The libraries of `java.util.function` have already defined what we need.
@@ -65,8 +65,8 @@ result. Examples are addition, multiplication on real numbers and string concate
 ## Monoids ##
 
 The next structure is called a monoid. A monoid is a semigroup with an identity or neutral element.
-An identity element is an element `e` such that `x * e = x = e * x`. In other words, it does not
-change the value.
+An identity element is an element \\(\varepsilon\\) such that \\(x \cdot \varepsilon = x = \varepsilon \cdot x\\), for any \\(x\\)
+in the underlying set. In other words, it does not change the value.
 
 For an implementation, we can extend the `Semigroup` class and add a single element that represents
 the identity element.
@@ -86,7 +86,7 @@ public class Monoid<A> extends Semigroup<A> {
     }
 }
 ```
-In multiplication, the identity is `1` whereas in addition, it is `0`. In string concatenation,
+In multiplication, the identity is \\(1\\) whereas in addition, it is \\(0\\). In string concatenation,
 it's the empty string. Let's define a few instances.
 
 ```java
@@ -109,10 +109,11 @@ Monoid<Boolean> boolOr = new Monoid<>(false, (p, q) -> p || q);
 ## Groups ##
 
 Lastly, we will see groups. A group is a monoid with an inverse. Elements in the carrier set
-should have a unique inverse, which when combined with the binary operation returns the
-identity element. Symbolically, `x * inv(x) = e = inv(x) * x`.
+should have a unique inverse that, when combined with the binary operation should return
+identity element. Symbolically, \\(x \cdot x^{-1} = \varepsilon = x^{-1}\cdot x\\).
 
-We model the inverse by a unary function that returns the inverse element of the argument.
+We model the inverse by a unary function that returns the inverse element of the argument,
+since each element must have an inverse.
 
 ```java
 public class Group<A> extends Monoid<A> {
@@ -130,7 +131,7 @@ public class Group<A> extends Monoid<A> {
 }
 ```
 
-We can create the group with addition, the inverse is the negation of a given integer.
+We can then create a group with addition on integers; the inverse is the negation of a given integer.
 
 ```java
 Group<Integer> intGroup = new Group<>(x -> x * (- 1), 0, (a, b) -> a + b);
@@ -160,7 +161,7 @@ the operator succesively to all elements. Associativity of the operator allows u
 to use parallelism, since the order does not affect the result (assuming these
 are pure computations). Here, null will be returned if there are no elements.
 
-Another general pattern is to apply the operator to a single element n times
+Another general pattern is to apply the operator to a single element \\(n\\) times
 
 ```java
 public static <A> A stimes(Semigroup<A> sem, A a, int n) {
