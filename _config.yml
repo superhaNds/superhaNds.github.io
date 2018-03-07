@@ -29,7 +29,7 @@ highlighter: rouge
 paginate: 5
 paginate_path: "/page:num/"
 inter_post_navigation: false
-highlightjs_theme: "mono-blue"
+highlightjs_theme: "github"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
