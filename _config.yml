@@ -24,12 +24,15 @@ cover: "/assets/header_image.jpg"
 logo: "/assets/logo.png"
 
 # Build settings
-markdown: kramdown
 highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
 paginate: 5
 paginate_path: "/page:num/"
 inter_post_navigation: false
 highlightjs_theme: "github"
+
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
