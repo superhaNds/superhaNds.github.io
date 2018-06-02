@@ -26,7 +26,7 @@ I have a bachelor in computer science from the University of Sheffield with a th
 Moreover, I attained a master's degree from Chalmers University of Technology. Μυ master's thesis was an Agda formalization of a categorical model of type theories, namely categories with families.
 
 The formalization is public [here](https://github.com/superhaNds/cwfs).
-The report can be viewed [here](/assets/thesis.pdf)
+The report can be viewed [here](/assets/documents/thesis.pdf).
 
 ### Other personal
 
