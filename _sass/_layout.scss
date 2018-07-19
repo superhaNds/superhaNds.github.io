@@ -27,6 +27,10 @@ ul.default {
 	@extend %default-ul;
 }
 
+.page__content {
+  text-align: justify;
+}
+
 code {
 	background-color: #eee;
 	display: inline-block;
