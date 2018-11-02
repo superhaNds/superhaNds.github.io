@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Personal ###
 
-My name is Konstantinos and this is a silly blog subjects I am interested in. They are usually related to computer science, mathematics, and philosophy.
+Pretentious blog related mainly to computer science, mathematics, and philosophy.
 
 I am currently a backend C# developer in the betting industry.
 
@@ -23,5 +23,5 @@ Main interests:
 
 ### Education ###
 
-BSc in Computer Science (University of Sheffield).
-MSc in Computer Science (Chalmers University of Technology).
+- BSc in Computer Science (University of Sheffield).
+- MSc in Computer Science (Chalmers University of Technology).
